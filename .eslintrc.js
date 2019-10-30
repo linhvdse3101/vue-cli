@@ -1,33 +1,21 @@
 module.exports = {
-  extends: [
-    "plugin:vue-libs/recommended"
-  ],
-  plugins: [
-    "node"
-  ],
+  root: true,
   env: {
-    "jest": true
+    node: true
   },
-  globals: {
-    name: 'off'
-  },
+  extends: ['plugin:vue/essential', '@vue/prettier'],
   rules: {
-    "indent": ["error", 2, {
-      "MemberExpression": "off"
-    }],
-    "no-shadow": ["error"],
-    "node/no-extraneous-require": ["error", {
-      "allowModules": [
-        "@vue/cli-service",
-        "@vue/cli-test-utils"
-      ]
-    }]
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
   },
   overrides: [
     {
-      files: ['**/__tests__/**/*.js', "**/cli-test-utils/**/*.js"],
-      rules: {
-        "node/no-extraneous-require": "off"
+      files: ['**/__tests__/*.{j,t}s?(x)'],
+      env: {
+        mocha: true
       }
     }
   ]

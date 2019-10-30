@@ -1,16 +1,34 @@
-# vue-cli [![Build Status](https://circleci.com/gh/vuejs/vue-cli/tree/dev.svg?style=shield)](https://circleci.com/gh/vuejs/vue-cli/tree/dev) [![Windows Build status](https://ci.appveyor.com/api/projects/status/rkpafdpdwie9lqx0/branch/dev?svg=true)](https://ci.appveyor.com/project/yyx990803/vue-cli/branch/dev) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+# my-app
 
+## Project setup
+```
+npm install
+```
 
-> Vue CLI is the Standard Tooling for Vue.js Development.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Documentation
+### Compiles and minifies for production
+```
+npm run build
+```
 
-Docs are available at https://cli.vuejs.org/ - we are still working on refining it and contributions are welcome!
+### Run your tests
+```
+npm run test
+```
 
-## Contributing
+### Lints and fixes files
+```
+npm run lint
+```
 
-Please see [contributing guide](https://github.com/vuejs/vue-cli/blob/dev/.github/CONTRIBUTING.md).
+### Run your unit tests
+```
+npm run test:unit
+```
 
-## License
-
-[MIT](https://github.com/vuejs/vue-cli/blob/dev/LICENSE)
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
